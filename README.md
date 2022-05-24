@@ -9,6 +9,8 @@
 
 #if you want to enter a valid password,it must contains both:
 
+######minimum 10 characters
+
 ######Upper_Case letter
 
 ######Lower_Case letter
@@ -20,5 +22,8 @@
 #each error explains why the error happend.
 
 
-![Capture5](https://user-images.githubusercontent.com/75747559/170122485-30006121-5a73-40fd-9663-95dc27522b31.PNG)
+![Capture6](https://user-images.githubusercontent.com/75747559/170123521-267557b8-2bcb-47dc-92f7-4be85e0c3da1.PNG)
+
+
+
 ############### HOPE YOU WIIL ENJOY PLAYING WITH THE APP ################
