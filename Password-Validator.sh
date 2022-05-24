@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 #global variables
 
 RED='\033[0;31m'
@@ -13,8 +12,10 @@ PASSWORD=$@
 LENGTH=${#PASSWORD}
 MIN=10
 
+echo 'checking password:' $PASSWORD
 
-# requirements
+
+# requirements for the password
 
 
 requirements(){ 
@@ -37,6 +38,16 @@ for (( i=0; i<${LENGTH}; i++)); do
 
         fi       
 done
+
+
+}
+
+# check if the user meet the requirements
+
+
+password_validation(){
+
+requirements    
 
 if [ "$LENGTH" -lt "$MIN" ];then
 
@@ -69,14 +80,12 @@ else
     return 0
 fi
 
+
 }
 
-requirements
+
+password_validation
+
 echo "exit code" $?
 
-while getops '-f' OPTIONS;do
-    case $OPTIONS in 
-    f)
-        read PATH
-    esac
 
