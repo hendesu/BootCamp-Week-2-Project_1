@@ -8,9 +8,19 @@ GREEN='\033[0;32m'
 ISDIGIT=0
 ISUPPER=0
 ISLOWER=0
-PASSWORD=$@
-LENGTH=${#PASSWORD}
+PASSWORD=$1
 MIN=10
+
+while getopts 'f' OPTION;do
+  case "$OPTION" in 
+
+    f) MY_FILE=$2
+      PASSWORD=`cat ${MY_FILE}` ;;
+           
+  esac
+done
+
+LENGTH=${#PASSWORD}
 
 echo 'checking password:' $PASSWORD
 
@@ -82,6 +92,7 @@ fi
 
 
 }
+
 
 
 password_validation
