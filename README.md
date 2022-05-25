@@ -1,3 +1,9 @@
+
+
+#### UPDATE FEATURE ####
+# NOW YOU CAN ADD A FLAG "-f".
+# -f (GIVE YOU THE OPTION TO CHECK PASSWORD FROM ANY FILE IN YOUR COMPUTER)
+
 # BootCamp-Week-2-Project_1
 
 #A little project I've got from my bootcamp.
