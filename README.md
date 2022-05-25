@@ -3,6 +3,7 @@
 #### UPDATE FEATURE ####
 # NOW YOU CAN ADD A FLAG "-f".
 # -f (GIVE YOU THE OPTION TO CHECK PASSWORD FROM ANY FILE IN YOUR COMPUTER)
+# example: "-f C\..\..\..\any_file_in_your_computer"
 
 # BootCamp-Week-2-Project_1
 
