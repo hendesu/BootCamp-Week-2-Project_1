@@ -12,7 +12,6 @@ PASSWORD=$@
 LENGTH=${#PASSWORD}
 MIN=10
 
-echo 'checking password:' $PASSWORD
 
 
 # requirements for the password
@@ -53,31 +52,31 @@ if [ "$LENGTH" -lt "$MIN" ];then
 
     echo -e "${RED}validation failed:minimun password length is 10!"
     
-    return 1
+    exit 1
 
 elif [[ $ISDIGIT -eq 0 ]];then
 
      echo -e "${RED}validation failed:must contain numbers"
     
-     return 1
+     exit 1
 
 elif [[ $ISUPPER -eq 0 ]];then
 
      echo -e "${RED}validation failed:must contain Upper Case"
     
-     return 1
+     exit 1
 
 elif [[ $ISLOWER -eq 0 ]];then
     
      echo -e "${RED}validation failed:must contain Lower Case"
     
-     return 1
+     exit 1
 
 else
 
     echo -e "${GREEN}validation succes! your password is" $PASSWORD
     
-    return 0
+    exit 0
 fi
 
 
